@@ -1,0 +1,76 @@
+/*
+	Theme Name: Twenty twenty one child
+	Theme URI: https://bolehdicoba.com
+	Author: BDD
+	Author URI: https://bolehdicoba.com/
+	Version: 1.0.0
+	Text Domain: twentytwentyone
+	Template:  twentytwentyone
+*/
+@font-face {
+	font-family: "chalkboard";
+	src: url('./assets/chalkboard.ttf');
+}
+
+h1,h2,h3,h4,h5,
+div, p, span{
+	font-family: "Chilanka" !important;
+	color: #000 !important;
+}
+
+.site-logo{
+	width: 15%;
+}
+
+.header-nav{
+	width: 85%;
+}
+
+.header-search{
+	width: 70%;
+	position: relative;
+}
+
+.header-search input[type="text"]{
+	border-color: #c4c4c4;
+    border-radius: 30px;
+}
+
+.header-search .btn{
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	color: #c4c4c4 !important;
+	border: unset !important;
+}
+
+.section-content {
+	padding: 85px 0;
+}
+
+.absolute-section{
+	position: absolute !important;
+}
+
+.image-full .elementor-image-box-wrapper .elementor-image-box-img,
+.image-full .elementor-image-box-wrapper .elementor-image-box-img img{
+	width: 100% !important;
+}
+
+.image-full .elementor-image-box-wrapper .elementor-image-box-img img{
+	max-width: 480px;
+}
+
+.text-left .elementor-image-box-content{
+	text-align: left;
+}
+
+.text-box .elementor-image-box-content{
+	position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+.width-70{
+	width: 70%;
+}

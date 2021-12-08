@@ -11,12 +11,12 @@
 	font-family: "chalkboard";
 	src: url('./assets/chalkboard.ttf');
 }
-
+/* 
 h1,h2,h3,h4,h5,
 div, p, span{
 	font-family: "Chilanka" !important;
 	color: #000 !important;
-}
+} */
 
 .site-logo{
 	width: 15%;
@@ -73,4 +73,94 @@ div, p, span{
 
 .width-70{
 	width: 70%;
+}
+
+.tech-stories .elementor-image-box-content {
+    position: absolute;
+    bottom: 43px;
+    left: 15px;
+	visibility: hidden;
+	transition: 0.2s ease-in;
+}
+
+.tech-stories:hover .elementor-image-box-content {
+	visibility: visible;
+}
+
+.tech-stories .elementor-image-box-img img {
+    position: relative;
+	box-shadow:
+	  0px 0.5px 0.8px rgba(0, 0, 0, 0.084),
+	  0px 1.5px 2.1px rgba(0, 0, 0, 0.12),
+	  0px 3.6px 5.1px rgba(0, 0, 0, 0.156),
+	  0px 12px 17px rgba(0, 0, 0, 0.24)
+	;
+}
+
+.muvers-team__heading {
+    position: absolute !important;
+    top: 70px;
+    left: 70px;
+}
+
+.muvers-team__img img {
+    position: relative;
+}
+
+.muvers-team__subheading {
+    position: absolute !important;
+    top: 134px;
+    left: 70px;
+}
+
+.muvers-team__subheading p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 36px;
+	color: white;
+}
+
+.muvers-team__btn {
+    position: absolute !important;
+    bottom: 70px;
+    left: 70px;
+}
+
+.subheading-custom p {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.tech-talks .elementor-swiper-button{
+	transform: translateY(-175px);
+	padding: 5px;
+	border-radius: 100%;
+}
+
+.tech-talks .elementor-swiper-button-prev{
+	left: unset;
+	right: 55px;
+	background: #C4C4C4;
+}
+
+.tech-talks .elementor-swiper-button-next{
+	background: #2E39D2;
+}
+
+.imej-karosel .elementor-image-carousel{
+	display: flex;
+	align-items: center;
+}
+
+.imej-karosel .swiper-slide{
+	transition: 0.3s ease-in-out
+}
+
+.imej-karosel .swiper-slide:hover{
+	width: 500px !important;
 }

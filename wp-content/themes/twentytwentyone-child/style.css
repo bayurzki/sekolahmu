@@ -7,6 +7,9 @@
 	Text Domain: twentytwentyone
 	Template:  twentytwentyone
 */
+body{
+	overflow-x: hidden;
+}
 @font-face {
 	font-family: "chalkboard";
 	src: url('./assets/chalkboard.ttf');
@@ -34,18 +37,20 @@ div, p, span{
 .header-search input[type="text"]{
 	border-color: #c4c4c4;
     border-radius: 30px;
+    padding: 5px 15px;
+    border-width: 1px;
 }
 
 .header-search .btn{
 	position: absolute;
 	right: 15px;
-	top: 7px;
+	top: 1px;
 	color: #c4c4c4 !important;
 	border: unset !important;
 }
 
-.section-content {
-	padding: 85px 0;
+.section-content > .elementor-container{
+	padding: 45px 0;
 }
 
 .absolute-section{
@@ -67,7 +72,7 @@ div, p, span{
 
 .text-box .elementor-image-box-content{
 	position: absolute;
-    bottom: 20px;
+    bottom: 35px;
     left: 15px;
 }
 
@@ -163,4 +168,114 @@ div, p, span{
 
 .imej-karosel .swiper-slide:hover{
 	width: 500px !important;
+}
+
+.nav-link {
+	margin: 0 10px;
+}
+.btn-rounded12 {
+	border-radius: 12px !important;
+}
+
+.btn-rounded50 {
+	border-radius: 50px !important;
+}
+.btn-tranparent{
+	border: 2px solid #3498db !important;
+	background: transparent;
+}
+
+.btn-blue{
+	background-color: #3498db;
+	color: #fff;
+}
+
+.nav-header-1 .widget figure{
+    margin: 20px 15px;
+    position: relative;
+    box-shadow: 4px 4px 8px rgb(111 44 255 / 15%);
+}
+
+.nav-header-1 .widget figure img{
+	max-width: 250px;
+    border-radius: 7px;
+}
+
+.nav-header-1 .widget figure figcaption{
+	position: absolute;
+    top: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    left: 15px;
+    color: #fff;
+}
+
+.brand-value .elementor-column .elementor-widget-wrap section .elementor-container {
+	background: #eee;
+	border-radius: 10px;
+}
+
+.section-news .elementor-column img{
+	max-width: 480px !important;
+}
+
+.section-news .sub-title p{
+	font-size: 16px;
+}
+
+.brand-value h4,
+.section-news h4{
+	font-size: 18px;
+	line-height: 22px;
+	color: #000 !important;
+}
+
+.brand-value p,
+.section-news p{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 10px !important;
+	color: #000 !important;
+}
+
+.text-box h3{
+	font-size: 18px;
+	line-height: 22px;
+	color: #fff !important;
+}
+
+.text-box p{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 5px !important;
+	color: #fff !important;
+}
+
+.event-section h5{
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.event-section p{
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.event-section .list-event{
+	padding: 15px 20px 15px 1px;
+	margin-top: 15px;
+	background: #fff;
+	border-radius: 4px;
+    box-shadow: 4px 4px 4px rgb(177 177 177 / 15%);
 }

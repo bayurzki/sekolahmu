@@ -27,14 +27,36 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
                     <button class="btn btn-primary bg-white" type="button"><i class="fa fa-search"></i></button>
                 </form>
                 <ul class="navbar-nav me-auto header-link">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produk Lainnya
+                        </a>
+                        <div class="dropdown-menu nav-header-1" aria-labelledby="navbarDropdown">
+                            <?php dynamic_sidebar( 'nav-header-1' ); ?>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-rounded12 btn-tranparent dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jenjang
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <?php //dynamic_sidebar( 'jenjang-nav' ); ?>
+                            <a class="dropdown-item" href="#">PAUD</a>
+                            <a class="dropdown-item" href="#">SD</a>
+                            <a class="dropdown-item" href="#">SMP</a>
+                            <a class="dropdown-item" href="#">SMA/K</a>
+                            <a class="dropdown-item" href="#">Orangtua</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Link</a>
+                        <a class="nav-link btn btn-rounded50 btn-blue" href="javascript:void(0)">
+                            <?php if (is_user_logged_in()) {
+                                echo "Hello, ";
+                            }else{
+                                echo "Masuk | Daftar";
+                            } 
+                            ?>
+                        </a>
                     </li>
                 </ul>
                 

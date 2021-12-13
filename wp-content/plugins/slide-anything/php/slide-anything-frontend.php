@@ -948,6 +948,8 @@ function slide_anything_shortcode($atts) {
 			$output .= "			autoplaySpeed : ".esc_attr($slide_data['slide_transition']).",\n";
 			$output .= "			navSpeed : ".esc_attr($slide_data['slide_transition']).",\n";
 			$output .= "			dotsSpeed : ".esc_attr($slide_data['slide_transition']).",\n";
+			$output .= "			stagePadding: 50,\n";
+			//$output .= "			margin: -65,\n";
 			if ($slide_data['dot_per_slide'] == '1') {
 				$output .= "			dotsEach : 1,\n";
 			}

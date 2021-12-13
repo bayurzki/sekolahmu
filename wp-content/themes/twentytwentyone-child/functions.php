@@ -24,6 +24,8 @@ function my_theme_enqueue_styles() {
 
 function my_custom_scripts() {
 	wp_enqueue_script( 'bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js','','',true );
+	wp_enqueue_script( 'owlcar-js', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js','','',true );
+	wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/assets/custom.js', array( 'jquery' ),'',true );
 }
 
 add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );

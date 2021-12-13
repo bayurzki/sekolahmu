@@ -74,6 +74,7 @@ div, p, span{
 	position: absolute;
     bottom: 35px;
     left: 15px;
+    z-index: 9999;
 }
 
 .width-70{
@@ -216,6 +217,10 @@ div, p, span{
 	border-radius: 10px;
 	box-shadow: 0px 10px 15px 0px #0000001A;
 }
+.brand-value .icon-value .elementor-element > .elementor-widget-container{
+	max-width: 75px;
+	margin: auto;
+}
 
 .section-news .elementor-column img{
 	max-width: 480px !important;
@@ -279,6 +284,20 @@ div, p, span{
 	background: #fff;
 	border-radius: 4px;
     box-shadow: 4px 4px 4px rgb(177 177 177 / 15%);
+}
+
+.event-section .list-event.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{
+	display: flex;
+	-webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
 }
 
 .pattern-yellow-square:before{
@@ -376,10 +395,54 @@ div, p, span{
     right: -20px;
 }
 
-.pattern-yellow-square img,
-.pattern-yellow-circle-grey img,
-.pattern-light-blue-w-ye img,
-.pattern-yellow-sq-n-cr img{
+.section-content img{
 	position: relative;
 	z-index: 99;
+}
+
+
+.head-quotes{
+	max-width: 680px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px 35px 0;
+    color: #fff;
+}
+
+.head-quotes .img-quotes > .elementor-widget-wrap {
+	padding-bottom: unset !important;
+}
+
+.carousel-top h4{
+	font-size: 30px;
+	line-height: 45px;
+}
+.carousel-top p{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.creative-top .elementor-container > .elementor-column > .elementor-widget-wrap{
+	padding: unset !important;
+}
+@media only screen and (max-width: 920px) {
+	.head-quotes{
+		background: #2A8CFF;
+		max-width: 320px;
+	}
+
+	.quotesna{
+		padding-top: 15px;
+	}
+
+	.text-box .elementor-image-box-content{
+		left: 10px;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.event-section .list-event .elementor-image-box-content{
+		padding-left: 15px;
+	}
+
 }
